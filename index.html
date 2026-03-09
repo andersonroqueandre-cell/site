@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anderson</title>
 </head>
+
 <body>
     <header>
         <h1>Anderson</h1>
@@ -21,10 +23,11 @@
     </header>
     <section id="sobreMim">
         <h2>Sobre mim</h2>
-        <img src="Imagens/WhatsApp Image 2026-02-10 at 11.40.50.jpeg" alt="Imagem de foto de perfil" title="Imagem de perfil de Anderson">
+        <img src="Imagens/WhatsApp Image 2026-02-10 at 11.40.50.jpeg" alt="Imagem de foto de perfil"
+            title="Imagem de perfil de Anderson">
         <article>
             <p>
-                Olá! Eu sou Anderson, sou um desenvolvedor web em fase inicial...
+                Olá! Eu sou Anderson, sou um desenvolvedor web...
             </p>
         </article>
 
@@ -59,11 +62,35 @@
             <p>
                 Tem um projeto em mente? Entre em contato.
             </p>
+            <form action="">
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required> <br>
 
-            <address>
-                E-mail: <a href="mailto: anderson@anderson.com">anderson@anderson.com</a> <br>
-                Telefone: <a href="tel: +55 48 99999-0000">48 99999-0000</a>
-            </address>
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" required> <br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone"> <br>
+
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvidas</option>
+                    <option value="outro">Outros</option>
+                </select><br>
+
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+                <br>
+
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja receber minha newsletter? fique ligado.</label>
+                <br>
+                <input type="submit" value="Enviar mensagem">
+
+            </form>
+
+
 
         </Section>
     </footer>
